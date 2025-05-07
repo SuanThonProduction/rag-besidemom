@@ -145,8 +145,3 @@ def generate_response2(prompt):
 query = "รู้ได้อย่างไรว่าลูกได้รับนมเพียงพอ"
 print(generate_response2(query))
 
-with open("requirements.txt", "w") as f:
-    f.write("sentence-transformers\n")
-    f.write("psycopg2-binary\n")
-    f.write("ollama\n")
-    f.write("requests\n")
