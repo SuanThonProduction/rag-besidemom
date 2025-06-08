@@ -1,0 +1,14 @@
+services:
+  rag-chatbot-api:
+    build:
+      context: .
+      dockerfile: dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./uploads:/app/uploads
+      - ./FAQ_for_Chatbot.pdf:/app/FAQ_for_Chatbot.pdf
+    environment:
+      - API_KEY=${API_KEY}
+      - BASE_URL=${BASE_URL}
+    restart: always
