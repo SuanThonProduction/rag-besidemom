@@ -140,7 +140,7 @@ Provide helpful, accurate, and caring responses based on the context provided.
         ]
         
         response = client.chat.completions.create(
-            model="typhoon-v2-70b-instruct",
+            model=os.getenv('MODEL_TYPE'),
             messages=conversation,
             max_tokens=request.max_tokens,
         

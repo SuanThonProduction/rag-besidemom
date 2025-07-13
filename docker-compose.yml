@@ -11,4 +11,5 @@ services:
     environment:
       - API_KEY=${API_KEY}
       - BASE_URL=${BASE_URL}
-    restart: always
+      - MODEL_TYPE=${MODEL_TYPE}
+    restart: always 
